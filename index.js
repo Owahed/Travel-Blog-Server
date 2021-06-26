@@ -94,26 +94,6 @@ client.connect(err => {
 
 });
 
-// client.connect(err => {
-//     const orderBooks = client.db("bookShop").collection("bookOrder");
-//     app.post('/bookOrder',(req,res)=>{
-//         const bookOrder=req.body;
-//         orderBooks.insertOne(bookOrder)
-//         .then(result=>{
-//             res.send(result.insertedCount>0);
-//         })
-//         console.log(bookOrder);
-//     })
-
-//     app.get('/allOrder',(req,res)=>{
-//         // console.log(req.query.email);
-//         orderBooks.find({email:req.query.email})
-//         .toArray((err,documents)=>{
-//             res.send(documents);
-//         })
-//     })
-//   });
-
 
 
 
